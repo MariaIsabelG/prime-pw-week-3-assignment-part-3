@@ -80,6 +80,14 @@ for(changes of supplyChanges){
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
 
+let sum=0;
+let supplyLength=supplyChanges.length;
+
+for(let i=0; i<supplyLength; i++){
+   sum = sum + supplyChanges[i];
+}
+console.log(sum);
+
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
 //    There are 572 parts in total, and each box holds 7 parts.
